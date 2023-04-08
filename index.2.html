@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Подтверждение заказа">
+        <title>Подтверждение заказа</title>
+    </head>
+    <body bgcolor="#FFE28A">
+        <div id="axis" class="one">
+            <img class="object van move-right" src="images/van-to-right.png" alt="" /></div>
+          <form>
+            <label id="numb" for="name">Введите номер телефона</label>
+            <input type="text" id="name" placeholder="+7 (000) - 000 - 00 - 00">
+          </form>
+
+          <form id="name"  name="test" method="post" action="input1.php">
+            <p><b>Ваше имя:</b><br>
+             <input type="text" size="40">
+            </p>
+            <p><b>Оплата:</b><Br>
+             <input type="radio" name="browser" value="ie">Система быстрых платежей<Br>
+             <input type="radio" name="browser" value="opera">Банковской картой курьеру<Br>
+             <input type="radio" name="browser" value="firefox">Наличными курьеру<Br>
+            </p>
+            <p><Br>
+             <input id="com" name="comment" cols="30" rows="1"></input></p>
+
+             <p><Br>
+
+                <input id="comm"name="comment1" cols="10" rows="1"></input></p>
+
+                <p><Br>
+
+
+                        
+           </form>
+
+        <style>
+            #com
+            {
+                width: 200px;
+                height: 20px;
+                border: 1px solid black;
+
+                margin-right: 1em;
+                object-fit: none;
+            }
+            #comm
+            {
+                width: 130px;
+                height: 20px;
+                border: 1px solid black;
+                position: relative;top: -59px; left: 240px;
+                margin-right: 1em;
+                object-fit: none;
+            }
+
+
+            
+        </style>
+        <p id="street">Улица:</p>
+        <p id="house">Дом:</p>
+
+        <style>
+            #street
+            {
+                position: relative;top: -154px; left: 0px;
+            }
+            #house
+            {
+                position: relative;top: -190px; left: 240px;
+            }
+           
+            #button
+            {
+                position: relative;top: -160px; left: 0px;
+                
+            }
+        </style>
+        <button id="button" onClick='location.href="index.1.html"''>Подтвердить заказ</button>
+    </body>
+</html>
