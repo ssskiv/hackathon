@@ -16,3 +16,9 @@ function changeValue(value) { // функция для изменения зна
   selectedValueElement.textContent = selectedValue; // обновляем значение на странице
 }
 
+function telnumb() {
+    var input = prompt("Введите свой номер телефона")
+    if (input != null) {
+        alert("Вы написали:" +input);
+    }
+}
