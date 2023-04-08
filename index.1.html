@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<script>
+    let map;
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Ваш заказ">
+    <title>Ваш заказ</title>
+    <script>
+        function readTextFile(file) {
+            let allText;
+            let ab = [];
+            let rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function nam() {
+                if (rawFile.readyState == 4 || rawFile.status == 200 || rawFile.status == 0) {
+                    allText = rawFile.responseText;
+                    ab = allText.split(["&"]);
+                    return ab;
+                }
+            }
+            rawFile.send(null);
+            return ab;
+        }
+        let arr;
+        arr = readTextFile("variables.txt");
+        console.log(arr[0]);
+        console.log(readTextFile("variables.txt"));
+        let number = arr[0];
+        let time = arr[1];
+        let status = arr[2];
+        let alt = arr[3];
+        let long = arr[4];
+        let alt_here = arr[5];
+        let long_here = arr[6];
+        let number_k = arr[7];
+        console.log(number_k);
+    </script>
+    <style>
+        .layer {
+            background: #fc3;
+            width: 100%
+        }
+    </style>
+    <style>
+        .layer2 {
+            background: #fc3;
+            width: 100%
+        }
+    </style>
+    <style>
+        .layer3 {
+            background: #fc3;
+            width: 100%
+        }
+    </style>
+    <div class="layer"><b>
+            <font size="5" face="Arial"> Номер заказа:
+                <script>
+                    document.write(number);
+                </script>
+        </b></div><br></font>
+    <div class="layer2"><b>
+            <font size="5" face="Arial">Статус заказа:
+                <script>
+                    document.write(status);
+                </script>
+        </b></div><br></font>
+    <div class="layer3"><b>
+            <font size="5" face="Arial"> Время создания:
+                <script>
+                    document.write(time);
+                </script>
+        </b></div><br></font>
+</head>
+
+<body bgcolor="#FFE28A">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        DG.then(function maps() {
+            map = DG.map('map', {
+                center: [alt, long],
+                zoom: 16
+            });
+            DG.marker([alt, long]).addTo(map).bindPopup("Курьер сейчас здесь!");
+        });
+    </script>
+    <div id="map" style="height:1000px; width:100%; margin-top:5%;"></div>
+</body>
+
+</html>
