@@ -1,6 +1,6 @@
 let cart = {
     'dafasf' : 2
-    'dffyu' : 2
+    'sndi' : 2
 
 }
 
