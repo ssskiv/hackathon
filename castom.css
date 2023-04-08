@@ -1,3 +1,56 @@
-<div style="width: 200px;">
-   <div style="height: 100px;"></div>
-</div>
+.about {
+   background-color: #0a0709;
+   padding: 50px 0;
+ 
+ }
+ 
+ .Main_bg_tochno{
+   background-color: #4e4e4a;
+ 
+ }
+ 
+ .Main_bg{
+   background-color: #9cc0c7;
+   margin-left: 0px;
+ }
+ 
+ .container1{
+   color: #ffffff;
+ 
+ }
+ 
+ .item{
+   color: #ffffff;
+ }
+ 
+ .logo_item{
+   color: #f1f110
+ }
+ 
+ .container {
+   max-width: 600px;
+   margin-left: 30px;
+   color: #396063;
+ }
+ 
+ h2 {
+   font-size: 30px;
+   margin-bottom: 20px;
+ }
+ 
+ p {
+   font-size: 15px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+ }
+ 
+ 
+ @media screen and (max-width: 768px) {
+   h2 {
+     font-size: 28px;
+   }
+   
+   p {
+     font-size: 16px;
+   }
+ } 
