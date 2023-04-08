@@ -21,11 +21,7 @@
             <button class="checkout-btn">Оформить заказ</button>
           </div> 
         -->
-          
-          
-          
-          
-          
+    
          <!--- <div class="cart-item">
             <div class="item-name">Название товара</div>
             <div class="item-quantity">
@@ -38,14 +34,15 @@
 
         
         
+        <!--Импортируем баскет из js2-->
+        <script src="jspage2.js"></script>
+        <script>
+            document.getElementById("basket").innerHTML = basket;
+        </script>
         
-        
-        <div class="cart">
-            <h3>Корзина</h3>
-            <ul class="cart-items"></ul>
-            <p class="total">Итого: 0р.</p>
-          </div>
-          
+
+
+        <!--Корзина-->
           <div class="menu">
             <h3>Меню</h3>
             <ul class="menu-items">
@@ -66,6 +63,23 @@
               </li>
             </ul>
           </div>
+              
+          <div class="cart">
+            <h3>Корзина</h3>
+                 <ul class="cart-items"></ul>
+                <p class="total">console.log basket</p>
+          </div>    
+          <a href="https://www.example.com"><button>Перейти в корзину</button></a>
+
+
+          <table>
+            <tr>
+              <td><button onclick="changeValue(1)">Button 1</button></td>
+              <td><button onclick="changeValue(2)">Button 2</button></td>
+              <td><button onclick="changeValue(3)">Button 3</button></td>
+            </tr>
+          </table>
+          <p>Selected value: <span id="selectedValue">0</span></p>
 
         
 
