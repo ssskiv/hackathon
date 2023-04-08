@@ -3,73 +3,37 @@
     <head>
         <link rel="stylesheet" href="css/css2.css">
         <title>Ваш заказ</title>
-        
-    </head>
-    <body>
 
+        <!--Импортируем переменные из js2-->
         <script src="jspage2.js"></script>
-
-        <!-- <div class="cart">
-            <h2>Корзина</h2>
-            <ul class="cart-items">
-            </ul>
-            <div class="cart-total">
-              <strong>Итого:</strong> <span class="total-price">0 руб.</span>
-            </div>
-            <button class="checkout-btn">Оформить заказ</button>
-          </div> 
-        -->
-    
-         <!--- <div class="cart-item">
-            <div class="item-name">Название товара</div>
-            <div class="item-quantity">
-              <label for="quantity">Количество:</label>
-              <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
-            </div>
-            <div class="item-price">10.00 руб</div>
-          </div>    
-        -->
-
-        
-        
-        <!--Импортируем баскет из js2-->
-        <!--<script src="jspage2.js"></script>
         <script>
             document.getElementById("basket").innerHTML = basket;
-        </script> -->
-        
+            document.getElementById("salat_price1").innerHTML = salat_price1;
+           
+            
+            // document.getElementById("basket").innerHTML = basket;
+            // document.getElementById("basket").innerHTML = basket;
+            // document.getElementById("basket").innerHTML = basket;
+            // document.getElementById("basket").innerHTML = basket;
+            // document.getElementById("basket").innerHTML = basket; 
+        </script>
 
+
+
+
+    </head>
+    <body>
+        <script src="jspage2.js"></script>
 
         <!--Корзина-->
-          <div class="menu">
-            <h2>Меню</h2>
-            <ul class="menu-items">
-              <li>
-                <h4>Бургер</h4>
-                <p>Цена: 350р.</p>
-                <button class="add-to-cart" data-name="Бургер" data-price="10">Добавить в корзину</button>
-              </li>
-              <li>
-                <h4>Пицца</h4>
-                <p>Цена: 550р.</p>
-                <button class="add-to-cart" data-name="Пицца" data-price="15">Добавить в корзину</button>
-              </li>
-              <li>
-                <h4>Салат</h4>
-                <p>Цена: 400р.</p>
-                <button class="add-to-cart" data-name="Салат" data-price="8">Добавить в корзину</button>
-              </li>
-            </ul>
+          <li>
+            <h4>Салат</h4>
+            <p>Цена: 400р.</p>
+            <button class="add-to-cart" data-name="Салат" data-price="8">Добавить в корзину</button>
+          </li>
+        
+          <div class="cart-total">
+            <strong>Итого:</strong> <span class="total-price"><script>document.write(basket)</script></span>
           </div>
-              
-          <div class="cart">
-            <h3>Корзина</h3>
-                 <ul class="cart-items"></ul>
-                <p class="total">console.log basket</p>
-          </div>    
-          <a href="https://www.example.com"><button>Перейти в корзину</button></a>
-        <!--Регистрация-->
-            <button onclick="telnumb()">Введите свой номер телефона</button>
-
     </body>
 </html>
