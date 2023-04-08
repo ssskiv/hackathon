@@ -54,3 +54,16 @@
         <a href="https://www.example.com"><button>Перейти в корзину</button></a>
       <!--Регистрация-->
           <button onclick="telnumb()">Введите свой номер телефона</button>
+
+
+          let count = 0; // определяем переменную count
+
+
+          <button onclick="increment()">Увеличить</button>
+          <p id="result"></p>
+          
+
+          function increment() {
+  count++; // увеличиваем значение переменной count на 1
+  document.getElementById("result").innerHTML = count; // выводим значение переменной count на страницу в элемент <p> с id="result"
+}

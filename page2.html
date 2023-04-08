@@ -9,13 +9,11 @@
         <script>
             document.getElementById("basket").innerHTML = basket;
             document.getElementById("salat_price1").innerHTML = salat_price1;
-           
-            
-            // document.getElementById("basket").innerHTML = basket;
-            // document.getElementById("basket").innerHTML = basket;
-            // document.getElementById("basket").innerHTML = basket;
-            // document.getElementById("basket").innerHTML = basket;
-            // document.getElementById("basket").innerHTML = basket; 
+            document.getElementById("salat_price2").innerHTML = salat_price2;
+            document.getElementById("pizza_price1").innerHTML = pizza_price1;
+            document.getElementById("pizza_price2").innerHTML = pizza_price2;
+            document.getElementById("pizza_price3").innerHTML = pizza_price3;
+            document.getElementById("pasta_price").innerHTML = pasta_price; 
         </script>
 
 
@@ -28,12 +26,14 @@
         <!--Корзина-->
           <li>
             <h4>Салат</h4>
-            <p>Цена: 400р.</p>
-            <button class="add-to-cart" data-name="Салат" data-price="8">Добавить в корзину</button>
+            <p><script>document.write(salat_price1 + ' p.')</script></p>
+            <button onclick="increment()">Увеличить</button>
+            <p id="result"></p>
           </li>
-        
           <div class="cart-total">
             <strong>Итого:</strong> <span class="total-price"><script>document.write(basket)</script></span>
           </div>
+        
+         
     </body>
 </html>
