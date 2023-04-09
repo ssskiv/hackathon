@@ -477,6 +477,10 @@ header .icons a:hover{
   max-width: 60rem;
 }
 
+.Your_bin{
+  font-size: 20px;
+}
+
 .newsletter .content form{
   margin:1rem auto;
   max-width: 50rem;
@@ -518,7 +522,14 @@ header .icons a:hover{
   padding-bottom: 1.5rem;
 }
 
-.footer .box-container .box a{
+.footer .box-container .box  a{
+  color:#666;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+}
+
+.box  p{
   color:#666;
   font-size: 1.5rem;
   padding-bottom: 1.5rem;
