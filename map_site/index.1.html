@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<script>
+    let map;
+</script>
+
+<head>
+    <style>
+        .header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="Ваш заказ">
+    <title>Ваш заказ</title>
+    <script>
+
+        let input;
+        let isNumber;
+        let number;
+
+        do {
+            input = prompt("Введите номер заказа");
+            isNumber = /^\d{2}$/.test(input);
+
+            if (input === null) {
+                alert("Введите действительный номера заказа");
+            } else if (!isNumber) {
+                alert("Введите действительный номера заказа");
+            } else {
+                number = Number(input);
+                console.log(number);
+            }
+            // return number;
+        } while (input !== null && !isNumber);
+        // let number_a = (saveNumber());
+        // console.log(number_a);
+
+
+
+
+
+        function saveNumber() {
+            let input = document.getElementById("myNumber");
+            let myNumber = input.valueAsNumber; // получаем значение поля в виде числа
+            console.log("Сохранено число: " + myNumber);
+            return myNumber;
+        }
+
+
+        // function readt() {
+        //     let rawFile = new XMLHttpRequest();
+        //     let allText;
+        //     var ab = [];
+        //     let file = "variables.txt";
+        //     let lineNumber = 2; // номер строки, которую нужно прочитать
+        //     rawFile.open("GET", file, true);
+        //     rawFile.onreadystatechange = function getarr() {
+        //         if (rawFile.readyState === 4 && rawFile.status === 200) {
+
+        //             let lines = rawFile.responseText.split('\n');
+        //             let line = lines[lineNumber]; // вычитываем нужную строку (нумерация строк начинается с 0)
+        //             document.getElementById("line").innerHTML = line;
+        //             allText = rawFile.responseText;
+        //             ab = line.split(["&"]);
+        //             // console.log(lines);
+        //             console.log(ab);
+        //             return ab;
+        //         }
+        //         return ab;
+        //     }
+
+        // };
+
+
+        // function readTextFile(file) {
+        //     let allText;
+        //     let ab = [];
+        //     let rawFile = new XMLHttpRequest();
+        //     rawFile.open("GET", file, false);
+        //     rawFile.onreadystatechange = function nam() {
+        //         if (rawFile.readyState == 4 || rawFile.status == 200 || rawFile.status == 0) {
+        //             allText = rawFile.responseText;
+        //             ab = allText.split(["&"]);
+        //             return ab;
+        //         }
+        //     };
+        //     rawFile.send(null);
+        //     return ab;
+        // };
+        function readTextFile(file) {
+            let allText;
+            let ab = [];
+            let rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function nam() {
+                if (rawFile.readyState == 4 || rawFile.status == 200 || rawFile.status == 0) {
+                    allText = rawFile.responseText;
+                    ab = allText.split(["\r\n"]);
+                    return ab;
+                }
+            };
+            rawFile.send(null);
+            return ab;
+        };
+
+        let arr;
+        arr = readTextFile("variables.txt");
+        let b = arr;
+
+        for (let abc = 0; abc < arr.length; ++abc) {
+            arr[abc] = arr[abc].split("&")
+            arr[abc].pop()
+        }
+        console.log(b);
+
+        let final_arr = [, , , , , , ,];
+
+        final_arr[0] = arr[number-1][0];
+        final_arr[1] = arr[number-1][1];
+        final_arr[2] = arr[number-1][2];
+        final_arr[3] = arr[number-1][3];
+        final_arr[4] = arr[number-1][4];
+        final_arr[5] = arr[number-1][5];
+        final_arr[6] = arr[number-1][6];
+
+
+        // let final_arr = [,,,,,,,];
+        // let numbs = 43;
+        // arr = readTextFile("variables.txt");
+        // let arrs = arr[44];
+        // let asc = Math.trunc(number/7);
+        // for(let abc = 0; abc < 8; abc++)
+        // {
+        //     console.log(asc);
+        //     console.log(arr)
+        //     // final_arr[0] = arr[(number)*7+1];
+        //     final_arr[0] = arr[number*7];
+        //     console.log(final_arr[0]);
+        //     final_arr[1] = arr[number*7+1];
+        //     final_arr[2] = arr[number*7+2];
+        //     final_arr[3] = arr[number*7+3];
+        //     final_arr[4] = arr[number*7+4];
+        //     final_arr[5] = arr[number*7+5];
+        //     final_arr[6] = arr[number*7+6];
+        //     console.log(asc+abc);
+        //     console.log(asc);
+
+        // }
+        // console.log(arr[(numbs-1)*8+0];
+        // console.log(arrs);
+        // console.log(readTextFile("variables.txt"));
+
+        // console.log(getarr);
+
+        // let arr;
+        // arr = readTextFile("variables.txt");
+        // console.log(arr[0]);
+        // console.log(readTextFile("variables.txt"));
+
+        let time = final_arr[1];
+        let status = final_arr[2];
+        let alt = final_arr[3];
+        let long = final_arr[4];
+        let alt_here = final_arr[5];
+        let long_here = final_arr[6];
+        let number_k = final_arr[7];
+        // console.log(number_k);
+
+
+        for (let a = 0; a < 100; a++) {
+            if (a == number) {
+
+            }
+
+        }
+    </script>
+    <style>
+        .layer {
+            background: rgb(255, 255, 255);
+            width: 100%
+        }
+    </style>
+    <style>
+        .layer2 {
+            background: rgb(255, 255, 255);
+            width: 100%
+        }
+    </style>
+    <style>
+        .layer3 {
+            background: rgb(255, 255, 255);
+            width: 100%
+        }
+    </style>
+    <div class="layer"><b>
+            <font size="5" face="Arial"> Номер заказа:
+                <script>
+                    document.write(number);
+                </script>
+        </b></div><br></font>
+    <div class="layer2"><b>
+            <font size="5" face="Arial">Статус заказа:
+                <script>
+                    document.write(status);
+                </script>
+        </b></div><br></font>
+    <div class="layer3"><b>
+            <font size="5" face="Arial"> Время создания:
+                <script>
+                    document.write(time);
+                </script>
+        </b></div><br></font>
+
+</head>
+
+
+<body bgcolor="#ffffff">
+    <div class="header"></div>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        DG.then(function maps() {
+            map = DG.map('map', {
+                center: [alt, long],
+                zoom: 16
+            });
+            DG.marker([alt, long]).addTo(map).bindPopup("Курьер сейчас здесь!");
+        });
+    </script>
+    <div id="map" style="height:1000px; width:100%; margin-top:5%;"></div>
+    <div id="line"></div>
+</body>
+
+</html>

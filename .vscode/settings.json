@@ -7,5 +7,6 @@
     "cert": "/Users/1/localhost.pem",
     "key": "/Users/1/localhost.key",
     "passphrase": "123456789"
-  }
+  },
+  "liveServer.settings.multiRootWorkspaceName": "hackathon"
 }
